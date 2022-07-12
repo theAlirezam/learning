@@ -1,3 +1,4 @@
 import requests
-
-respose = requests.get()
+from config import url, API_KEY
+respond = requests.get(url + API_KEY)
+print(respond)
