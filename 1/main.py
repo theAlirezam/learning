@@ -37,5 +37,3 @@ print('hi')
 
 'ji'
 'ji'
-'ji'
-'ji'
