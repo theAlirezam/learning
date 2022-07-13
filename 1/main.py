@@ -36,3 +36,6 @@ print('hi')
 # # print(result)
 
 'ji'
+'ji'
+'ji'
+'ji'
