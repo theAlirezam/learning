@@ -35,12 +35,3 @@ print('hi')
 # result = response.text
 # # print(result)
 
-'ji'
-'ji'
-'ji'
-'ji'
-'ji'
-'ji'
-'ji'
-'ji'
-'ji'
