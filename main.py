@@ -20,6 +20,8 @@ archive_to_dir('tst1', res['data'])
 print(get_data())
 
 
+print('hi')
+
 # urll = "https://api.apilayer.com/fixer/convert?to={to}&from={from}&amount={amount}"
 #
 # payload = {}
