@@ -1,38 +1,29 @@
 import requests
-from config import url2
+from config import url2, rules
 import json
+
+unic = ''
 
 
 def get_data():
-    irespond = requests.get(url2)
-    if irespond.status_code == 200:
-        return json.loads(irespond.text)
+    is_respond = requests.get(url2)
+    if is_respond.status_code == 200:
+        return json.loads(is_respond.text)
+
     return None
 
 
 def archive_to_dir(filename, data):
-    with open(f'archive/{filename}.json', 'w') as f:
+    with open(f'directory/{filename}.json', 'w') as f:
         f.write(json.dumps(data))
 
 
+def send_email(subject, text):
+    text = json.dumps(text)
+
+
 res = get_data()
-archive_to_dir('tst1', res['data'])
-print(get_data())
-
-
-print('hi')
-
-# urll = "https://api.apilayer.com/fixer/convert?to={to}&from={from}&amount={amount}"
-#
-# payload = {}
-# headers = {
-#     "apikey": "oX92FSLGD0HlitzTTjbeFSSxvqHKUPYI"
-# }
-#
-# response = requests.request("GET", url, headers=headers, data=payload)
-#
-# status_code = response.status_code
-# result = response.text
-# # print(result)
-
-
+if rules['archive']:
+    archive_to_dir(res['time_table'], res['data'])
+if rules['send_email']:
+    send_email('test1', res['data'])
