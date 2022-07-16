@@ -1,5 +1,7 @@
 import requests
-from config import url2, rules
+import smtplib
+from config import url2, rules, EMAIL_RECEIVER
+from email.mime.text import MIMEText
 import json
 
 
@@ -17,13 +19,29 @@ def archive_to_dir(filename, data):
         f.write(json.dumps(data))
 
 
-def send_email(subject, text):
+def send_api_email(subject, text):
     text = json.dumps(text)
+
+
+def send_smtp_email(subject, body):
+    msg = MIMEText(body)
+    msg['Subject'] = subject
+    msg['From'] = 'aslkd;alskdfaskjdf'
+    msg['To'] = EMAIL_RECEIVER
+
+    with smtplib.SMTP('smtp.mailgun.org', 587) as mail_server:
+        mail_server.login(';sdkfjlskdfljdf;sl', 'lkasdjflkjdf')
+        mail_server.sendmail(msg['From'], msg['To'], msg.as_string())
+        mail_server.quit()
+
+
+# send email
+
+def send_notification():
+    pass
 
 
 res = get_data()
 
 if rules['archive']:
     archive_to_dir('tst1', res['data'])
-if rules['send_email']:
-    send_email('test1', res['data'])
