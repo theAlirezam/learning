@@ -44,4 +44,4 @@ def send_notification():
 res = get_data()
 
 if rules['archive']:
-    archive_to_dir('tst1', res['data'])
+    archive_to_dir(res['source'][0]['annotations']['table_id'], res['data'])
