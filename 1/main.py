@@ -1,9 +1,7 @@
 import requests
-import smtplib
 import json
 import notification
 from config import url2, rules
-from email.mime.text import MIMEText
 from khayyam import JalaliDate
 from datetime import datetime
 
