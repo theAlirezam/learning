@@ -1,12 +1,7 @@
 from two import all_models
 
-c1 = all_models.Customer('ali', 'karimi', 123)
-c2 = all_models.Customer('saeed', 'alavi', 456)
+c1 = all_models.Customer('ali', 1, 1234)
 
-p1 = all_models.Products(1, 'milk', 1000)
-p2 = all_models.Products(2, 'tea', 0)
+r1 = all_models.Reseller('hosein', 1, 45767)
 
-print(c1)
-
-if p2.is_free():
-    print(p1.product_name + f' is FREE!')
+print(r1)
