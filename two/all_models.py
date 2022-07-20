@@ -10,8 +10,21 @@ class User:
     def __str__(self):
         return f"\n{self.user_name}: {str(self.user_id)}"
 
+    @property
+    def pswrd(self):
+        pass
+
+    @classmethod
+    def hi(cls):
+        pass
+
+    @staticmethod
+    def hello(ji):
+        pass
+
 
 class Customer(User):
+
     customer_list = list()
 
     def __init__(self, user_name, customer_id, password):
