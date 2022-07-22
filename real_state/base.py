@@ -17,4 +17,3 @@ class BaseClass(ABC):
     @classmethod
     def store(cls, obj):
         cls.object_list.append(obj)
-
