@@ -35,3 +35,9 @@ apt_sell = ApartmentSale(user=customer_list[-2], has_elevator=False, has_parking
 
 apt_sell.show_detail()
 # print(ApartmentSale.mro())
+
+search_res = ApartmentSale.manager.search(floor=3)
+print(search_res)
+
+
+
