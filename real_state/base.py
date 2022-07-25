@@ -23,6 +23,7 @@ class BaseClass(ABC):
         if BaseClass.object_list is None:
             cls.object_list = list()
         cls.object_list.append(obj)
+        # print(cls.object_list)
 
     @classmethod
     def set_manager(cls):
