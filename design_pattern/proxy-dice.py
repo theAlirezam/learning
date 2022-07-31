@@ -33,12 +33,51 @@ user1 = User()
 user2 = User()
 
 game = Game(user1, user2)
+"""
+print(check_turn_and_roll(game, user2))
+print(check_turn_and_roll(game, user2))
+print(check_turn_and_roll(game, user1))
+print(check_turn_and_roll(game, user1))
+print(check_turn_and_roll(game, user2))
+print(check_turn_and_roll(game, user1))
+"""
 
-print(check_turn_and_roll(game, user2))
-print(check_turn_and_roll(game, user2))
-print(check_turn_and_roll(game, user1))
-print(check_turn_and_roll(game, user1))
-print(check_turn_and_roll(game, user2))
-print(check_turn_and_roll(game, user1))
+##################### LAZY LOADER ########################
 
-print(user1, user2)
+
+from time import sleep
+
+
+class Lazy:
+    def __init__(self, cls):
+        self.cls = cls
+        self.object = None
+
+    def __getattr__(self, item):
+        if self.object is None:
+            self.object = self.cls()
+        return getattr(self.object, item)
+
+
+class A:
+    def __init__(self):
+        sleep(10)
+
+    # @staticmethod
+    def connect(self):
+        return "A connecting"
+
+
+class B:
+    def __init__(self):
+        sleep(6)
+
+    def show(self):
+        return "B showing"
+
+
+b = Lazy(B)
+# b = Lazy(A)
+print(b.show())
+# print(b.connect())
+
