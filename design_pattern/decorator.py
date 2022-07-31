@@ -24,6 +24,9 @@ class Purchase:
         return t
 
 
+##########proxy########
+
+
 VAT = {'iran': 9, 'afghanistan': 20}
 COUNTRIES = ['iran', 'afghanistan']
 
