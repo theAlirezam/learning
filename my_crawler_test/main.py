@@ -1,8 +1,5 @@
-import requests
-from bs4 import BeautifulSoup
-import threading
-from multiprocessing import Pool
-from crawl import LinkCrawler, DataCrawler
+from crawl import LinkCrawler, DataCrawler, ImageDownloader
+import login
 
 #
 # def get_page(url, start=0):
@@ -48,8 +45,13 @@ from crawl import LinkCrawler, DataCrawler
 
 
 if __name__ == "__main__":
-
     lc = LinkCrawler()
-    lc.start()
-    # dc = DataCrawler()
-    # dc.start()
+    # lc.start(store=True)
+
+    dc = DataCrawler()
+    # dc.start(store=True)
+
+    # id = ImageDownloader()
+    # id.start(True)
+
+

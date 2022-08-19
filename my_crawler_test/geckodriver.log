@@ -1,0 +1,35 @@
+1660751668525	geckodriver	INFO	Listening on 127.0.0.1:37351
+1660751668648	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--remote-debugging-port" "51897" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile4JgG25"
+Gtk-Message: 20:24:28.790: Failed to load module "canberra-gtk-module"
+Gtk-Message: 20:24:28.791: Failed to load module "canberra-gtk-module"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1660751734641	geckodriver	INFO	Listening on 127.0.0.1:41799
+1660751734768	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--remote-debugging-port" "57525" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileBwhSYx"
+Gtk-Message: 20:25:34.906: Failed to load module "canberra-gtk-module"
+Gtk-Message: 20:25:34.908: Failed to load module "canberra-gtk-module"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1660751748202	geckodriver	INFO	Listening on 127.0.0.1:48473
+1660751748323	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--remote-debugging-port" "55689" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilensahik"
+Gtk-Message: 20:25:48.466: Failed to load module "canberra-gtk-module"
+Gtk-Message: 20:25:48.467: Failed to load module "canberra-gtk-module"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1660752338341	geckodriver	INFO	Listening on 127.0.0.1:37015
+1660752338464	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--remote-debugging-port" "58969" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileTDvD6h"
+Gtk-Message: 20:35:38.603: Failed to load module "canberra-gtk-module"
+Gtk-Message: 20:35:38.605: Failed to load module "canberra-gtk-module"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1660752797381	geckodriver	INFO	Listening on 127.0.0.1:43189
+1660752797504	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "--remote-debugging-port" "42097" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileIgzGuY"
+Gtk-Message: 20:43:17.643: Failed to load module "canberra-gtk-module"
+Gtk-Message: 20:43:17.644: Failed to load module "canberra-gtk-module"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
